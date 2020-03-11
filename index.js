@@ -4,23 +4,23 @@
 
 const driver = {};
 
-function updateDriverWIthKeyAndValue(object, key, value){
-  let newObj = { ...object}
+function updateDriverWIthKeyAndValue(driver, key, value){
+  let newObj = { ...driver}
   newobject[key] = value;
   return newObj;
 }
 
-function destructivelyUpdateDriverWithKeyAndValue(object, key, value){
-  object[key] = value
-  return object
+function destructivelyUpdateDriverWithKeyAndValue(driver, key, value){
+  driver[key] = value
+  return driver
 }
 
-function deleteFromDriverByKey(object, key){
-  let newObj = {...object};
+function deleteFromDriverByKey(driver, key){
+  let newObj = {...driver};
   delete newObj[key]
   return newObj
 }
 
-function destructivelyDeleteFromDriverByKey(object, key){
-  delete object[key]
+function destructivelyDeleteFromDriverByKey(driver){
+  delete driver[key]
 }
