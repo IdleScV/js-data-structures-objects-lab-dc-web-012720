@@ -1,10 +1,11 @@
 // Write your solution in this file!
 function updateDriverWIthKeyAndValue(object, key, value){
-  let newObj = {...object}
-  newobject[key] = value
+  const newObj = { ...object}
+  newobject[key] = value;
   return newObj
 }
 
 function destructivelyUpdateDriverWithKeyAndValue(object, key, value){
-  object
+  object[key] = value
+  return object
 }
